@@ -1,0 +1,860 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="My portfolio v2.1">
+	<!-- Loader:
+		This loader was design by: 
+			Mathieu Richard ==> https://codepen.io/MathieuRichard
+	 -->
+	<!-- Make loader not scroll content [fix it!] -->
+	<section
+		class="fixed w-full h-screen z-30 grid items-center bg-secondary animate-loading overflow-hidden"
+	>
+		<div class="overflow-hidden w-full h-64 flex items-end justify-center">
+			<div class="relative h-[2px] w-[100px] md:w-[500px] bg-white">
+				<div
+					class="absolute -top-12 -ml-[30px] w-[60px] h-[60px] left-0 bg-white rounded-[30%] animate-move"
+				>
+				</div>
+				<p
+					class="text-secondary absolute -top-[35px] -right-[85px] uppercase font-bold"
+				>
+					Loading
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Header -->
+	<Header title="xiayudev™" signup="Sign Up" body="Home" />
+
+	<!-- Main item -->
+	<main class="z-20 h-auto w-full">
+		<!-- Section banner -->
+		<section class="relative h-screen w-full">
+			<div
+				class="absolute h-full w-full bg-coding-with-glasses bg-cover bg-center md:bg-fixed"
+			>
+			</div>
+			<div
+				class="absolute flex h-full w-full flex-col items-center justify-end space-y-4 bg-gradient-to-b from-primary to-[#171820f2] opacity-95 md:space-y-16 lg:space-y-20 xl:space-y-32"
+			>
+				<div
+					class="flex h-auto w-auto flex-col items-center justify-center px-5 py-10"
+				>
+					<div
+						class="flex h-auto w-auto flex-col items-center space-y-6 md:flex-row md:justify-evenly md:space-x-4 md:space-y-0"
+					>
+						<div class="space-y-4 sm:pl-10 md:space-y-0 lg:mr-10">
+							<h1
+								class="mb-2 text-center text-2xl font-medium text-gray-100 sm:text-4xl lg:text-5xl"
+							>
+								Web Developer (Loading &#x1F601;)
+							</h1>
+							<p
+								class="text-center font-roboto-flex font-extralight leading-7 text-gray-300 sm:text-lg lg:text-2xl lg:leading-relaxed md:w-80 md:text-left lg:text-center lg:w-[600px]"
+							>
+								Hi, my name is Josue. I build things for the
+								web. I am a junior web developer and freelancer.
+							</p>
+						</div>
+						<picture
+							class="mt-6 h-36 w-36 md:mt-0 md:h-52 md:w-52 lg:h-80 lg:w-80"
+							id="profile"
+						>
+							<source srcset="/img/me.avif" type="image/avif" />
+							<img
+								src="/img/me.png"
+								alt="Profile"
+								class="h-full w-full rounded-full border-4 border-terciary object-cover object-center"
+							/>
+						</picture>
+					</div>
+				</div>
+				<a
+					href="#one"
+					class="grid h-28 w-28 place-items-center text-gray-300 lg:h-32 lg:w-32"
+				>
+					<ion-icon
+						class="h-7 w-7 animate-bounce transition-all duration-500 lg:h-10 lg:w-10 lg:hover:text-terciary"
+						name="code-download-outline"
+					/>
+				</a>
+			</div>
+		</section>
+
+		<!-- Section one - Introduction-->
+		<section
+			class="relative h-auto w-full drop-shadow-2xl md:h-screen"
+			id="one"
+		>
+			<div
+				class="relative h-full w-full md:absolute md:bg-setup md:bg-cover md:bg-fixed md:bg-center"
+			>
+				<img class="md:hidden" src="/img/setup_pc.png" alt="Set up" />
+			</div>
+			<div
+				class="flex flex-col items-center border-t-2 border-blue-500 bg-gradient-to-b from-secondary to-primary py-10 px-5 text-center font-extralight text-gray-400 sm:border-t-4 sm:px-10 md:absolute md:bottom-0 md:text-left md:opacity-95 2xl:space-y-4 2xl:px-80 2xl:pt-20"
+			>
+				<div
+					class="space-y-10 md:grid md:grid-cols-3 md:gap-4 md:space-y-0"
+				>
+					<div
+						class="flex flex-col items-center space-y-4 md:items-start"
+					>
+						<h2
+							class="w-4/5 text-2xl font-medium text-gray-100 lg:text-3xl 2xl:text-4xl"
+						>
+							A little about me and my work &#x270D;.
+						</h2>
+						<p class="text-gray-200 2xl:text-lg">
+							Hello! I am xiayudev and I love creating some useful
+							stuffs for the web and everything related to the
+							internet and techs.
+						</p>
+					</div>
+					<div class="2xl:text-lg">
+						My journey in web development started when I was curious
+						about how web pages were built and started to edit them
+						on devtools of Chrome web browser. After that, step by
+						step I was falling in love with every thing that I was
+						able to build. Now, I cannot live without coding.
+					</div>
+					<div class="2xl:text-lg">
+						Nowadays, I am learning frameworks for CSS and
+						Javascript. Also, I will learn back-end techs and all
+						related to this amazing path. I know this path takes
+						time but I will work smart, tough and gain the respect
+						of the comunity. Currently I am focused on building
+						accesible, human-centered, responsive web app and
+						applications.
+					</div>
+				</div>
+				<a
+					class="hidden h-16 w-20 transition-all duration-500 md:grid md:items-end md:justify-center lg:h-20 lg:w-32 lg:hover:text-terciary"
+					href="#two"
+				>
+					<ion-icon
+						class="h-7 w-7 animate-bounce lg:h-10 lg:w-10"
+						name="code-download-outline"
+					/>
+				</a>
+			</div>
+		</section>
+
+		<!-- Section two -  Project 1-->
+		<section
+			id="two"
+			class="h-auto w-full drop-shadow-xl md:flex md:h-screen md:items-end md:justify-center"
+		>
+			<div
+				class="h-full w-full md:absolute md:bg-code-alone md:bg-cover md:bg-fixed md:bg-center"
+			>
+				<img
+					class="md:hidden"
+					src="/img/code_alone.png"
+					alt="a man in front of his computer"
+				/>
+			</div>
+			<div
+				class="flex flex-col items-center border-t-2 border-green-500 bg-gradient-to-b from-secondary to-primary py-10 px-5 text-center font-extralight text-gray-400 sm:border-t-4 sm:px-10 md:absolute md:right-0 md:h-full md:w-2/5 md:max-w-lg md:border-l-4 md:border-t-0 md:border-l-green-500 md:text-left md:opacity-95 xl:px-20"
+			>
+				<div class="flex flex-col items-center space-y-10">
+					<div
+						class="flex flex-col items-center space-y-4 md:items-start"
+					>
+						<h2
+							class="w-4/5 text-2xl font-medium text-gray-100 lg:text-3xl 2xl:text-4xl"
+						>
+							Title of my first big project &#x1F981;.
+						</h2>
+						<p class="text-gray-200 2xl:text-lg">
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Omnis earum nobis itaque corporis quia.
+							Expedita exercitationem quos sint accusantium illo.
+						</p>
+					</div>
+					<div class="2xl:text-lg">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Voluptate cum velit eaque. Praesentium recusandae quod
+						ducimus architecto accusamus! Autem exercitationem
+						commodi pariatur ab nemo dolorem enim animi assumenda
+						mollitia tempore!
+					</div>
+					<a
+						class="grid h-10 w-full place-items-center rounded-lg font-normal text-gray-100 ring-1 ring-gray-500 transition-all duration-500 sm:w-[200px] lg:hover:text-terciary lg:hover:ring-terciary 2xl:h-14"
+						href="#"
+						>Learn More
+					</a>
+				</div>
+			</div>
+			<a
+				class="hidden h-16 w-20 transition-all duration-500 md:bottom-0 md:grid md:place-items-center lg:h-20 lg:w-32 lg:hover:text-terciary"
+				href="#three"
+			>
+				<ion-icon
+					class="h-7 w-7 animate-bounce lg:h-10 lg:w-10"
+					name="code-download-outline"
+				/>
+			</a>
+		</section>
+
+		<!-- Section three - Project 2-->
+		<section
+			id="three"
+			class="h-auto w-full drop-shadow-2xl md:flex md:h-screen md:items-end md:justify-center"
+		>
+			<div
+				class="h-full w-full md:absolute md:bg-video-games md:bg-cover md:bg-fixed md:bg-center"
+			>
+				<img class="md:hidden" src="/img/video_games.png" alt="" />
+			</div>
+			<div
+				class="flex flex-col items-center border-t-2 border-terciary bg-gradient-to-b from-secondary to-primary py-10 px-5 text-center font-extralight text-gray-400 sm:border-t-4 sm:px-10 md:absolute md:left-0 md:h-full md:w-2/5 md:max-w-lg md:border-t-0 md:border-r-4 md:border-r-terciary md:px-5 md:text-left md:opacity-95 xl:px-20"
+			>
+				<div class="flex flex-col items-center space-y-10">
+					<div
+						class="flex flex-col items-center space-y-4 md:items-start"
+					>
+						<h2
+							class="w-4/5 text-2xl font-medium text-gray-100 lg:text-3xl 2xl:text-4xl"
+						>
+							Title of my second big project &#x1F9D0;.
+						</h2>
+						<p class="text-gray-200 2xl:text-lg">
+							Lorem, ipsum dolor sit amet consectetur adipisicing
+							elit. Reiciendis eum nam magnam asperiores quod,
+							architecto distinctio commodi doloremque odit saepe!
+						</p>
+					</div>
+					<div class="2xl:text-lg">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Voluptate cum velit eaque. Praesentium recusandae quod
+						ducimus architecto accusamus! Autem exercitationem
+						commodi pariatur ab nemo dolorem enim animi assumenda
+						mollitia tempore!
+					</div>
+					<a
+						class="grid h-10 w-full place-items-center rounded-lg font-normal text-gray-100 ring-1 ring-gray-500 transition-all duration-500 sm:w-[200px] lg:hover:text-terciary lg:hover:ring-terciary 2xl:h-14"
+						href="#"
+						>Learn More
+					</a>
+				</div>
+			</div>
+			<a
+				class="hidden h-16 w-20 text-gray-200 transition-all duration-500 md:grid md:place-items-center lg:h-20 lg:w-32 lg:hover:text-terciary"
+				href="#four"
+			>
+				<ion-icon
+					class="h-7 w-7 animate-bounce lg:h-10 lg:w-10"
+					name="code-download-outline"
+				/>
+			</a>
+		</section>
+
+		<!-- Section four - Other projects -->
+		<section
+			id="four"
+			class="flex h-auto w-full flex-col items-center space-y-4 bg-primary py-10 px-5 font-extralight lg:py-20 lg:px-10 2xl:py-36"
+		>
+			<!-- Work's introduction -->
+			<div
+				class="flex h-full max-w-md flex-col items-center space-y-6 2xl:max-w-2xl 2xl:space-y-10"
+			>
+				<h2
+					class="text-center text-2xl font-medium text-gray-100 md:text-3xl lg:text-4xl 2xl:text-5xl"
+				>
+					Some other interesting projects
+				</h2>
+				<p class="text-center text-gray-400 2xl:text-lg">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+					quasi minus, ab repellendus excepturi vero impedit
+					quibusdam!
+				</p>
+				<div class="h-1 w-3/4 max-w-xs bg-terciary"></div>
+			</div>
+
+			<!-- Works -->
+			<div
+				class="sm: flex h-auto w-full flex-col sm:grid sm:grid-cols-2 sm:grid-rows-3 sm:gap-1 md:grid-cols-3 md:grid-rows-2 2xl:gap-4 2xl:px-60 2xl:py-20"
+			>
+				<!-- Work 1 -->
+				<div class="flex flex-col items-center space-y-6 py-10">
+					<div
+						class="grid h-28 w-28 place-items-center rounded-full bg-secondary"
+					>
+						<ion-icon
+							class="h-10 w-10 text-gray-100"
+							name="rocket-outline"
+						/>
+					</div>
+					<div class="flex flex-col items-center space-y-6">
+						<h3
+							class="text-center text-xl font-light text-gray-100 2xl:text-2xl"
+						>
+							Title of porject
+						</h3>
+						<p class="text-center text-gray-400 2xl:text-lg">
+							Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Eligendi amet, voluptate amet, voluptate!
+						</p>
+						<!-- Links -->
+						<div class="flex items-center space-x-4">
+							<!-- github repo -->
+							<a
+								href="https://github.com/TheSunLand7/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+									></path>
+								</svg>
+							</a>
+							<a
+								href="https://app.netlify.com/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										d="M17.13 9.68 22 11.8v-.11c-.07-.24-.28-.45-.7-.87l-2-2-2.07.87zM12.2 7.24a1.31 1.31 0 0 1 .16.47l3 1.29a1.11 1.11 0 0 1 .29-.14l.48-3-2-2-1.95 3.3s0 .05.02.08zM10.61 7a1.1 1.1 0 0 1 1-.2h.05l2.16-3.34-.66-.66c-.42-.42-.63-.63-.87-.7a1 1 0 0 0-.63 0c-.24.07-.45.28-.87.7l-3 3c.31.14 2.5 1.06 2.78 1.19zm-3.12 5.29h.27a1.45 1.45 0 0 1 .29 0l2.38-3.68v-.06a1 1 0 0 1-.27-.95L9 7l-1.7-.73L5 8.61l2.51 3.66zm7.62-2.44v-.08a.59.59 0 0 1 0-.14l-2.86-1.27h-.05a1.05 1.05 0 0 1-.88.47h-.17s-.05 0-.06.05L8.73 12.5v.05l6.33-2.7s.05.02.05 0zm1.36-.91a.83.83 0 0 1 .26.19l2-.84-1.89-1.87-.4 2.47zm-2.29 5.54A.91.91 0 0 1 15 14v-.05l.54-3.37-.09-.08L9 13.15a2.76 2.76 0 0 1 .08.27zM2 11.95zm12.14 3.18L8.92 14v.06L13.47 21l.42-.43c.15-.92.71-4.33.78-4.72a.9.9 0 0 1-.53-.72zm1.65.32a.88.88 0 0 1-.36.27l-.64 3.94L18.43 16zm1.07-5.13a.07.07 0 0 0-.06 0 .92.92 0 0 1-.61.34v.06l-.55 3.4a.88.88 0 0 1 .34.62h.06l2.95.61 2.28-2.28a4.22 4.22 0 0 0 .65-.74zM8.3 14.59a1.27 1.27 0 0 1-.86 0l-1.22 1.9 4.69 4.68a2.68 2.68 0 0 0 .87.71 1 1 0 0 0 .63 0 1.86 1.86 0 0 0 .7-.54l-4.69-6.8zm4.71 6.82zm-6.62-7.82s.06 0 .06-.05 0 0-.06 0l-4.14-.86a7.07 7.07 0 0 0 .51.54l1.36 1.36 2.27-1zm.28-.66a1.05 1.05 0 0 1 .2-.27v-.06C6.1 11.4 5.3 10.24 4.5 9.07l-1.75 1.75c-.42.42-.63.63-.7.87A.75.75 0 0 0 2 12l4.67 1zm.17 1.33a.61.61 0 0 1-.07-.1L4.59 15l1.08 1.1 1.17-1.82s.01-.02 0-.02z"
+									></path>
+								</svg>
+							</a>
+							<!-- Github.io -->
+							<a
+								href="https://github.com.io/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"
+									></path>
+									<path
+										d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+									></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Work 2 -->
+				<div class="flex flex-col items-center space-y-6 py-10">
+					<div
+						class="grid h-28 w-28 place-items-center rounded-full bg-secondary"
+					>
+						<ion-icon
+							class="h-10 w-10 text-gray-100"
+							name="rainy-outline"
+						/>
+					</div>
+					<div class="flex flex-col items-center space-y-6">
+						<h3
+							class="text-center text-xl font-light text-gray-100 2xl:text-2xl"
+						>
+							Title of porject
+						</h3>
+						<p class="text-center text-gray-400 2xl:text-lg">
+							Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Eligendi amet, voluptate amet, voluptate!
+						</p>
+						<!-- Links -->
+						<div class="flex items-center space-x-4">
+							<!-- github repo -->
+							<a
+								href="https://github.com/TheSunLand7/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+									></path>
+								</svg>
+							</a>
+							<a
+								href="https://app.netlify.com/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										d="M17.13 9.68 22 11.8v-.11c-.07-.24-.28-.45-.7-.87l-2-2-2.07.87zM12.2 7.24a1.31 1.31 0 0 1 .16.47l3 1.29a1.11 1.11 0 0 1 .29-.14l.48-3-2-2-1.95 3.3s0 .05.02.08zM10.61 7a1.1 1.1 0 0 1 1-.2h.05l2.16-3.34-.66-.66c-.42-.42-.63-.63-.87-.7a1 1 0 0 0-.63 0c-.24.07-.45.28-.87.7l-3 3c.31.14 2.5 1.06 2.78 1.19zm-3.12 5.29h.27a1.45 1.45 0 0 1 .29 0l2.38-3.68v-.06a1 1 0 0 1-.27-.95L9 7l-1.7-.73L5 8.61l2.51 3.66zm7.62-2.44v-.08a.59.59 0 0 1 0-.14l-2.86-1.27h-.05a1.05 1.05 0 0 1-.88.47h-.17s-.05 0-.06.05L8.73 12.5v.05l6.33-2.7s.05.02.05 0zm1.36-.91a.83.83 0 0 1 .26.19l2-.84-1.89-1.87-.4 2.47zm-2.29 5.54A.91.91 0 0 1 15 14v-.05l.54-3.37-.09-.08L9 13.15a2.76 2.76 0 0 1 .08.27zM2 11.95zm12.14 3.18L8.92 14v.06L13.47 21l.42-.43c.15-.92.71-4.33.78-4.72a.9.9 0 0 1-.53-.72zm1.65.32a.88.88 0 0 1-.36.27l-.64 3.94L18.43 16zm1.07-5.13a.07.07 0 0 0-.06 0 .92.92 0 0 1-.61.34v.06l-.55 3.4a.88.88 0 0 1 .34.62h.06l2.95.61 2.28-2.28a4.22 4.22 0 0 0 .65-.74zM8.3 14.59a1.27 1.27 0 0 1-.86 0l-1.22 1.9 4.69 4.68a2.68 2.68 0 0 0 .87.71 1 1 0 0 0 .63 0 1.86 1.86 0 0 0 .7-.54l-4.69-6.8zm4.71 6.82zm-6.62-7.82s.06 0 .06-.05 0 0-.06 0l-4.14-.86a7.07 7.07 0 0 0 .51.54l1.36 1.36 2.27-1zm.28-.66a1.05 1.05 0 0 1 .2-.27v-.06C6.1 11.4 5.3 10.24 4.5 9.07l-1.75 1.75c-.42.42-.63.63-.7.87A.75.75 0 0 0 2 12l4.67 1zm.17 1.33a.61.61 0 0 1-.07-.1L4.59 15l1.08 1.1 1.17-1.82s.01-.02 0-.02z"
+									></path>
+								</svg>
+							</a>
+							<!-- Github.io -->
+							<a
+								href="https://github.com.io/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"
+									></path>
+									<path
+										d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+									></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Work 3 -->
+				<div class="flex flex-col items-center space-y-6 py-10">
+					<div
+						class="grid h-28 w-28 place-items-center rounded-full bg-secondary"
+					>
+						<ion-icon
+							class="h-10 w-10 text-gray-100"
+							name="qr-code-outline"
+						/>
+					</div>
+					<div class="flex flex-col items-center space-y-6">
+						<h3
+							class="text-center text-xl font-light text-gray-100 2xl:text-2xl"
+						>
+							Title of porject
+						</h3>
+						<p class="text-center text-gray-400 2xl:text-lg">
+							Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Eligendi amet, voluptate amet, voluptate!
+						</p>
+						<div class="flex items-center space-x-4">
+							<!-- github repo -->
+							<a
+								href="https://github.com/TheSunLand7/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+									></path>
+								</svg>
+							</a>
+							<a
+								href="https://app.netlify.com/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										d="M17.13 9.68 22 11.8v-.11c-.07-.24-.28-.45-.7-.87l-2-2-2.07.87zM12.2 7.24a1.31 1.31 0 0 1 .16.47l3 1.29a1.11 1.11 0 0 1 .29-.14l.48-3-2-2-1.95 3.3s0 .05.02.08zM10.61 7a1.1 1.1 0 0 1 1-.2h.05l2.16-3.34-.66-.66c-.42-.42-.63-.63-.87-.7a1 1 0 0 0-.63 0c-.24.07-.45.28-.87.7l-3 3c.31.14 2.5 1.06 2.78 1.19zm-3.12 5.29h.27a1.45 1.45 0 0 1 .29 0l2.38-3.68v-.06a1 1 0 0 1-.27-.95L9 7l-1.7-.73L5 8.61l2.51 3.66zm7.62-2.44v-.08a.59.59 0 0 1 0-.14l-2.86-1.27h-.05a1.05 1.05 0 0 1-.88.47h-.17s-.05 0-.06.05L8.73 12.5v.05l6.33-2.7s.05.02.05 0zm1.36-.91a.83.83 0 0 1 .26.19l2-.84-1.89-1.87-.4 2.47zm-2.29 5.54A.91.91 0 0 1 15 14v-.05l.54-3.37-.09-.08L9 13.15a2.76 2.76 0 0 1 .08.27zM2 11.95zm12.14 3.18L8.92 14v.06L13.47 21l.42-.43c.15-.92.71-4.33.78-4.72a.9.9 0 0 1-.53-.72zm1.65.32a.88.88 0 0 1-.36.27l-.64 3.94L18.43 16zm1.07-5.13a.07.07 0 0 0-.06 0 .92.92 0 0 1-.61.34v.06l-.55 3.4a.88.88 0 0 1 .34.62h.06l2.95.61 2.28-2.28a4.22 4.22 0 0 0 .65-.74zM8.3 14.59a1.27 1.27 0 0 1-.86 0l-1.22 1.9 4.69 4.68a2.68 2.68 0 0 0 .87.71 1 1 0 0 0 .63 0 1.86 1.86 0 0 0 .7-.54l-4.69-6.8zm4.71 6.82zm-6.62-7.82s.06 0 .06-.05 0 0-.06 0l-4.14-.86a7.07 7.07 0 0 0 .51.54l1.36 1.36 2.27-1zm.28-.66a1.05 1.05 0 0 1 .2-.27v-.06C6.1 11.4 5.3 10.24 4.5 9.07l-1.75 1.75c-.42.42-.63.63-.7.87A.75.75 0 0 0 2 12l4.67 1zm.17 1.33a.61.61 0 0 1-.07-.1L4.59 15l1.08 1.1 1.17-1.82s.01-.02 0-.02z"
+									></path>
+								</svg>
+							</a>
+							<!-- Github.io -->
+							<a
+								href="https://github.com.io/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"
+									></path>
+									<path
+										d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+									></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Work 4 -->
+				<div class="flex flex-col items-center space-y-6 py-10">
+					<div
+						class="grid h-28 w-28 place-items-center rounded-full bg-secondary"
+					>
+						<ion-icon
+							class="h-10 w-10 text-gray-100"
+							name="terminal-outline"
+						/>
+					</div>
+					<div class="flex flex-col items-center space-y-6">
+						<h3
+							class="text-center text-xl font-light text-gray-100 2xl:text-2xl"
+						>
+							Title of porject
+						</h3>
+						<p class="text-center text-gray-400 2xl:text-lg">
+							Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Eligendi amet, voluptate amet, voluptate!
+						</p>
+						<div class="flex items-center space-x-4">
+							<!-- github repo -->
+							<a
+								href="https://github.com/TheSunLand7/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+									></path>
+								</svg>
+							</a>
+							<a
+								href="https://app.netlify.com/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										d="M17.13 9.68 22 11.8v-.11c-.07-.24-.28-.45-.7-.87l-2-2-2.07.87zM12.2 7.24a1.31 1.31 0 0 1 .16.47l3 1.29a1.11 1.11 0 0 1 .29-.14l.48-3-2-2-1.95 3.3s0 .05.02.08zM10.61 7a1.1 1.1 0 0 1 1-.2h.05l2.16-3.34-.66-.66c-.42-.42-.63-.63-.87-.7a1 1 0 0 0-.63 0c-.24.07-.45.28-.87.7l-3 3c.31.14 2.5 1.06 2.78 1.19zm-3.12 5.29h.27a1.45 1.45 0 0 1 .29 0l2.38-3.68v-.06a1 1 0 0 1-.27-.95L9 7l-1.7-.73L5 8.61l2.51 3.66zm7.62-2.44v-.08a.59.59 0 0 1 0-.14l-2.86-1.27h-.05a1.05 1.05 0 0 1-.88.47h-.17s-.05 0-.06.05L8.73 12.5v.05l6.33-2.7s.05.02.05 0zm1.36-.91a.83.83 0 0 1 .26.19l2-.84-1.89-1.87-.4 2.47zm-2.29 5.54A.91.91 0 0 1 15 14v-.05l.54-3.37-.09-.08L9 13.15a2.76 2.76 0 0 1 .08.27zM2 11.95zm12.14 3.18L8.92 14v.06L13.47 21l.42-.43c.15-.92.71-4.33.78-4.72a.9.9 0 0 1-.53-.72zm1.65.32a.88.88 0 0 1-.36.27l-.64 3.94L18.43 16zm1.07-5.13a.07.07 0 0 0-.06 0 .92.92 0 0 1-.61.34v.06l-.55 3.4a.88.88 0 0 1 .34.62h.06l2.95.61 2.28-2.28a4.22 4.22 0 0 0 .65-.74zM8.3 14.59a1.27 1.27 0 0 1-.86 0l-1.22 1.9 4.69 4.68a2.68 2.68 0 0 0 .87.71 1 1 0 0 0 .63 0 1.86 1.86 0 0 0 .7-.54l-4.69-6.8zm4.71 6.82zm-6.62-7.82s.06 0 .06-.05 0 0-.06 0l-4.14-.86a7.07 7.07 0 0 0 .51.54l1.36 1.36 2.27-1zm.28-.66a1.05 1.05 0 0 1 .2-.27v-.06C6.1 11.4 5.3 10.24 4.5 9.07l-1.75 1.75c-.42.42-.63.63-.7.87A.75.75 0 0 0 2 12l4.67 1zm.17 1.33a.61.61 0 0 1-.07-.1L4.59 15l1.08 1.1 1.17-1.82s.01-.02 0-.02z"
+									></path>
+								</svg>
+							</a>
+							<!-- Github.io -->
+							<a
+								href="https://github.com.io/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"
+									></path>
+									<path
+										d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+									></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Work 5 -->
+				<div class="flex flex-col items-center space-y-6 py-10">
+					<div
+						class="grid h-28 w-28 place-items-center rounded-full bg-secondary"
+					>
+						<ion-icon
+							class="h-10 w-10 text-gray-100"
+							name="tv-outline"
+						/>
+					</div>
+					<div class="flex flex-col items-center space-y-6">
+						<h3
+							class="text-center text-xl font-light text-gray-100 2xl:text-2xl"
+						>
+							Title of porject
+						</h3>
+						<p class="text-center text-gray-400 2xl:text-lg">
+							Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Eligendi amet, voluptate amet, voluptate!
+						</p>
+						<div class="flex items-center space-x-4">
+							<!-- github repo -->
+							<a
+								href="https://github.com/TheSunLand7/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+									></path>
+								</svg>
+							</a>
+							<a
+								href="https://app.netlify.com/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										d="M17.13 9.68 22 11.8v-.11c-.07-.24-.28-.45-.7-.87l-2-2-2.07.87zM12.2 7.24a1.31 1.31 0 0 1 .16.47l3 1.29a1.11 1.11 0 0 1 .29-.14l.48-3-2-2-1.95 3.3s0 .05.02.08zM10.61 7a1.1 1.1 0 0 1 1-.2h.05l2.16-3.34-.66-.66c-.42-.42-.63-.63-.87-.7a1 1 0 0 0-.63 0c-.24.07-.45.28-.87.7l-3 3c.31.14 2.5 1.06 2.78 1.19zm-3.12 5.29h.27a1.45 1.45 0 0 1 .29 0l2.38-3.68v-.06a1 1 0 0 1-.27-.95L9 7l-1.7-.73L5 8.61l2.51 3.66zm7.62-2.44v-.08a.59.59 0 0 1 0-.14l-2.86-1.27h-.05a1.05 1.05 0 0 1-.88.47h-.17s-.05 0-.06.05L8.73 12.5v.05l6.33-2.7s.05.02.05 0zm1.36-.91a.83.83 0 0 1 .26.19l2-.84-1.89-1.87-.4 2.47zm-2.29 5.54A.91.91 0 0 1 15 14v-.05l.54-3.37-.09-.08L9 13.15a2.76 2.76 0 0 1 .08.27zM2 11.95zm12.14 3.18L8.92 14v.06L13.47 21l.42-.43c.15-.92.71-4.33.78-4.72a.9.9 0 0 1-.53-.72zm1.65.32a.88.88 0 0 1-.36.27l-.64 3.94L18.43 16zm1.07-5.13a.07.07 0 0 0-.06 0 .92.92 0 0 1-.61.34v.06l-.55 3.4a.88.88 0 0 1 .34.62h.06l2.95.61 2.28-2.28a4.22 4.22 0 0 0 .65-.74zM8.3 14.59a1.27 1.27 0 0 1-.86 0l-1.22 1.9 4.69 4.68a2.68 2.68 0 0 0 .87.71 1 1 0 0 0 .63 0 1.86 1.86 0 0 0 .7-.54l-4.69-6.8zm4.71 6.82zm-6.62-7.82s.06 0 .06-.05 0 0-.06 0l-4.14-.86a7.07 7.07 0 0 0 .51.54l1.36 1.36 2.27-1zm.28-.66a1.05 1.05 0 0 1 .2-.27v-.06C6.1 11.4 5.3 10.24 4.5 9.07l-1.75 1.75c-.42.42-.63.63-.7.87A.75.75 0 0 0 2 12l4.67 1zm.17 1.33a.61.61 0 0 1-.07-.1L4.59 15l1.08 1.1 1.17-1.82s.01-.02 0-.02z"
+									></path>
+								</svg>
+							</a>
+							<!-- Github.io -->
+							<a
+								href="https://github.com.io/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"
+									></path>
+									<path
+										d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+									></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Work 6 -->
+				<div class="flex flex-col items-center space-y-6 py-10">
+					<div
+						class="grid h-28 w-28 place-items-center rounded-full bg-secondary"
+					>
+						<ion-icon
+							class="h-10 w-10 text-gray-100"
+							name="library-outline"
+						/>
+					</div>
+					<div class="flex flex-col items-center space-y-6">
+						<h3
+							class="text-center text-xl font-light text-gray-100 2xl:text-2xl"
+						>
+							Title of porject
+						</h3>
+						<p class="text-center text-gray-400 2xl:text-lg">
+							Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Eligendi amet, voluptate amet, voluptate!
+						</p>
+						<div class="flex items-center space-x-4">
+							<!-- github repo -->
+							<a
+								href="https://github.com/TheSunLand7/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+									></path>
+								</svg>
+							</a>
+							<a
+								href="https://app.netlify.com/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										d="M17.13 9.68 22 11.8v-.11c-.07-.24-.28-.45-.7-.87l-2-2-2.07.87zM12.2 7.24a1.31 1.31 0 0 1 .16.47l3 1.29a1.11 1.11 0 0 1 .29-.14l.48-3-2-2-1.95 3.3s0 .05.02.08zM10.61 7a1.1 1.1 0 0 1 1-.2h.05l2.16-3.34-.66-.66c-.42-.42-.63-.63-.87-.7a1 1 0 0 0-.63 0c-.24.07-.45.28-.87.7l-3 3c.31.14 2.5 1.06 2.78 1.19zm-3.12 5.29h.27a1.45 1.45 0 0 1 .29 0l2.38-3.68v-.06a1 1 0 0 1-.27-.95L9 7l-1.7-.73L5 8.61l2.51 3.66zm7.62-2.44v-.08a.59.59 0 0 1 0-.14l-2.86-1.27h-.05a1.05 1.05 0 0 1-.88.47h-.17s-.05 0-.06.05L8.73 12.5v.05l6.33-2.7s.05.02.05 0zm1.36-.91a.83.83 0 0 1 .26.19l2-.84-1.89-1.87-.4 2.47zm-2.29 5.54A.91.91 0 0 1 15 14v-.05l.54-3.37-.09-.08L9 13.15a2.76 2.76 0 0 1 .08.27zM2 11.95zm12.14 3.18L8.92 14v.06L13.47 21l.42-.43c.15-.92.71-4.33.78-4.72a.9.9 0 0 1-.53-.72zm1.65.32a.88.88 0 0 1-.36.27l-.64 3.94L18.43 16zm1.07-5.13a.07.07 0 0 0-.06 0 .92.92 0 0 1-.61.34v.06l-.55 3.4a.88.88 0 0 1 .34.62h.06l2.95.61 2.28-2.28a4.22 4.22 0 0 0 .65-.74zM8.3 14.59a1.27 1.27 0 0 1-.86 0l-1.22 1.9 4.69 4.68a2.68 2.68 0 0 0 .87.71 1 1 0 0 0 .63 0 1.86 1.86 0 0 0 .7-.54l-4.69-6.8zm4.71 6.82zm-6.62-7.82s.06 0 .06-.05 0 0-.06 0l-4.14-.86a7.07 7.07 0 0 0 .51.54l1.36 1.36 2.27-1zm.28-.66a1.05 1.05 0 0 1 .2-.27v-.06C6.1 11.4 5.3 10.24 4.5 9.07l-1.75 1.75c-.42.42-.63.63-.7.87A.75.75 0 0 0 2 12l4.67 1zm.17 1.33a.61.61 0 0 1-.07-.1L4.59 15l1.08 1.1 1.17-1.82s.01-.02 0-.02z"
+									></path>
+								</svg>
+							</a>
+							<!-- Github.io -->
+							<a
+								href="https://github.com.io/"
+								target="_blank"
+								class="fill-gray-100 transition-all duration-500 lg:hover:fill-terciary"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="28"
+									height="28"
+								>
+									<path
+										d="m13 3 3.293 3.293-7 7 1.414 1.414 7-7L21 11V3z"
+									></path>
+									<path
+										d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+									></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<a
+				class="grid h-10 w-full place-items-center rounded-lg font-normal text-gray-100 ring-1 ring-gray-500 transition-all duration-500 sm:w-[200px] lg:hover:text-terciary 2xl:h-14 2xl:w-[300px] 2xl:text-lg 2xl:hover:ring-terciary"
+				href="#"
+				>Show More
+			</a>
+		</section>
+
+		<!-- Get in touch -->
+		<section
+			class="flex min-h-[50vh] w-full flex-col items-center space-y-6 bg-terciary py-10 px-5 font-extralight text-gray-200 sm:px-10 lg:py-20"
+		>
+			<div class="max-w-md">
+				<h2
+					class="text-center text-2xl font-medium text-gray-100 md:text-3xl lg:text-4xl"
+				>
+					Get in touch with me!
+				</h2>
+				<p class="text-center">
+					Please, feel free to mail me. Whether you have a question or
+					just want to say hi, I will try my best to get back to you!
+				</p>
+			</div>
+
+			<!-- Forms -->
+			<form action="#" class="h-auto w-full xl:px-60 2xl:px-96">
+				<fieldset
+					class="flex h-full w-full flex-col sm:flex-row sm:flex-wrap"
+				>
+					<div class="mb-7 sm:mr-5 sm:flex-grow 2xl:mr-32">
+						<label for="name" class="flex flex-col space-y-4">
+							<span
+								class="font-normal after:ml-0.5 after:text-gray-300 after:content-['*']"
+								>Name
+							</span>
+							<input
+								class="h-12 rounded-xl border border-pink-400 bg-terciary px-5 text-pink-300 outline-none"
+								type="text"
+								id="name"
+								placeholder="Your name"
+								autocomplete="name"
+								required
+							/>
+						</label>
+					</div>
+					<div class="sm:flex-grow">
+						<label for="mail" class="flex flex-col space-y-4">
+							<span
+								class="inline-block font-normal after:ml-0.5 after:text-gray-300 after:content-['*']"
+								>E-mail
+							</span>
+							<input
+								class="peer h-12 rounded-xl border border-pink-400 bg-terciary px-5 text-pink-300 outline-none"
+								type="email"
+								id="mail"
+								placeholder="Your email"
+								autocomplete="email"
+							/>
+							<p
+								class="invisible text-sm text-gray-300 peer-invalid:visible"
+							>
+								Please provide a valid email address
+							</p>
+						</label>
+					</div>
+					<div class="mb-10 sm:w-full">
+						<label for="message" class="flex flex-col space-y-4">
+							<span
+								class="font-normal after:ml-0.5 after:text-gray-300 after:content-['*']"
+								>Message
+							</span>
+							<textarea
+								class="w-full rounded-xl border border-pink-400 bg-terciary px-5 text-pink-300 outline-none"
+								id="message"
+								placeholder="Your message"
+								rows="8"
+								name="message"
+								required></textarea>
+						</label>
+					</div>
+					<div class="flex w-full justify-center">
+						<input
+							type="submit"
+							value="Send Message"
+							class="h-12 w-3/4 max-w-xs self-center rounded-xl bg-gray-100 text-terciary ring-1 ring-gray-100 transition-all duration-500 hover:cursor-pointer lg:font-normal lg:hover:bg-[#e65971] lg:hover:text-gray-100 lg:hover:ring-pink-400 2xl:h-14 outline-none"
+							id="cta-btn"
+							name="cta-btn"
+						/>
+					</div>
+				</fieldset>
+			</form>
+		</section>
+	</main>
+
+	<!-- Footer item -->
+	<Footer />
+</Layout>
+
+<style>
+	.open {
+		transform: rotate(90deg);
+		transform: translateY(0px);
+	}
+	.open .ham-top {
+		transform: rotate(45deg) translateY(6px) translate(6px);
+	}
+	.open .ham-middle {
+		display: none;
+	}
+	.open .ham-bottom {
+		transform: rotate(-45deg) translateY(6px) translate(-6px);
+	}
+</style>
