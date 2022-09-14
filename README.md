@@ -1,30 +1,12 @@
-# Welcome to [Astro](https://astro.build)
+# Welcome my portfolio
+- The loader that I am using in my portfolio was designed by [Mathieu Richard](https://codepen.io/MathieuRichard)
+- I built my portfolio with [Atro](https://astro.build/)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+## 🚀 Portfolio Structure
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Inside of my portfolio, you'll see the following folders and files:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.ico
-├── src/
-│   ├── components/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components or layouts.
-
-Any static assets, like images, can be placed in the `public/` directory.
+> Pending...
 
 ## 🧞 Commands
 
@@ -38,7 +20,3 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`      | Preview your build locally, before deploying       |
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
 | `npm run astro --help` | Get help using the Astro CLI                       |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
