@@ -1,6 +1,6 @@
 # Welcome my portfolio
 - The loader that I am using in my portfolio was designed by [Mathieu Richard](https://codepen.io/MathieuRichard)
-- I built my portfolio with [Atro](https://astro.build/)
+- This portfolio was built with [Astro](https://astro.build/)
 
 ## 🚀 Portfolio Structure
 
