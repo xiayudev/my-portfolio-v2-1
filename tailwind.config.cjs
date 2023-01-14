@@ -53,11 +53,11 @@ module.exports = {
 				move: 'move 5s cubic-bezier(0,.3,1,.64) forwards',
 			},
 			backgroundImage: {
-				'coding-with-glasses': "url('./src/assets/img/code_with_glasses.png')",
-				'setup': "url('./src/assets/img/setup_pc.png')",
-				'code-alone': "url('./src/assets/img/code_alone.png')",
-				'mymtech': "url('./src/assets/img/mymtech.jpg')",
-				'video-games': "url('./src/assets/img/video_games.png')",
+				'coding-with-glasses': "url('/img/code_with_glasses.png')",
+				'setup': "url('/img/setup_pc.png')",
+				'code-alone': "url('/img/code_alone.png')",
+				'mymtech': "url('/img/mymtech.jpg')",
+				'video-games': "url('/img/video_games.png')",
 			},
 			fontFamily: {
 				'roboto-flex': 'Roboto Flex, sans-serif',
