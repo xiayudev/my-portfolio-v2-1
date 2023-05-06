@@ -5,7 +5,7 @@
     <img src="https://api.netlify.com/api/v1/badges/28f4a7f9-a7cd-43cb-9a0b-84142bbfd100/deploy-status" alt="Netlify Status" />
   </a>
 </p>
-<p><img src="https://res.cloudinary.com/djvwjnzxw/image/upload/v1683344281/demo_flbkvj.png"></p>
+<p><img src="https://res.cloudinary.com/djvwjnzxw/image/upload/v1683414228/demo_1_qylw6w.png"></p>
 
 ## Fork this repo
 You can use this portfolio as an inspiration (*with attributions*).
