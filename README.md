@@ -1,12 +1,14 @@
-# Welcome my portfolio
-- The loader that I am using in my portfolio was designed by [Mathieu Richard](https://codepen.io/MathieuRichard)
-- This portfolio was built with [Astro](https://astro.build/)
+<h1 align="center"> Welcome to my portfolio </h1>
+<p align="center"> This web page was built with <a href="https://astro.build/">Astro</a> and hosted with <a href="https://www.netlify.com">Netlify</a> </p>
+<p align="center">
+  <a href="https://app.netlify.com/sites/xiayudevsportfoliov2/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/28f4a7f9-a7cd-43cb-9a0b-84142bbfd100/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
+<p><img src="https://res.cloudinary.com/djvwjnzxw/image/upload/v1683344281/demo_flbkvj.png"></p>
 
-## 🚀 Portfolio Structure
-
-Inside of my portfolio, you'll see the following folders and files:
-
-> Pending...
+## Fork this repo
+You can use this portfolio as an inspiration (*with attributions*).
 
 ## Resources I used for my portfolio
 
