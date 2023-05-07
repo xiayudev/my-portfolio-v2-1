@@ -57,7 +57,7 @@ module.exports = {
 				'setup': "url('/img/setup_pc.png')",
 				'code-alone': "url('/img/code_alone.png')",
 				'mymtech': "url('/img/mymtech.jpg')",
-				'video-games': "url('/img/video_games.png')",
+				'video-games': "url('https://res.cloudinary.com/djvwjnzxw/image/upload/v1683418344/hsh_shell_hppe0o.png')",
 			},
 			fontFamily: {
 				'roboto-flex': 'Roboto Flex, sans-serif',
