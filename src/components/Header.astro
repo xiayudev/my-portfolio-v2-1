@@ -60,25 +60,21 @@ const { signup, title, body } = Astro.props as Props;
 						<li
 							class="rounded-md py-2 pr-4 pl-2 hover:bg-terciary hover:cursor-pointer hover:text-gray-100"
 						>
-							<a href="#two">Project 1</a>
+							<a href="#two">Project MyMTech</a>
 						</li>
 						<li
 							class="rounded-md py-2 pr-4 pl-2 hover:bg-terciary hover:cursor-pointer hover:text-gray-100"
 						>
-							<a href="#three">Project 2</a>
+							<a href="#three">Project Shell</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="#blogs" class="lg:hover:text-terciary">Blogs</a>
+					<a href="#contact" class="lg:hover:text-terciary">Contact</a>
 				</li>
-				<!-- <li>
-					<a
-						href="#"
-						class="inline-block rounded-sm bg-terciary px-4 py-1 font-normal text-gray-300 lg:hover:bg-[#e65971]"
-						>{signup}
-					</a>
-				</li> -->
+				<li>
+					<a href="#contact" class="lg:hover:text-terciary">Blog</a>
+				</li>
 			</ul>
 		</div>
 	</section>
@@ -110,20 +106,4 @@ const { signup, title, body } = Astro.props as Props;
 	}
 </style>
 
-<script>
-	/**Menu bar icon */
-	const menu = document.getElementById("menu") as HTMLDivElement;
-	const menu_btn = document.getElementById("menu-btn") as HTMLDivElement;
-	const menuItems = document.querySelectorAll(".menu-item");
 
-	const toggleMenu = () => {
-		const $body = document.querySelector("body") as HTMLBodyElement;
-		$body.classList.toggle("overflow-hidden");
-		menu_btn.classList.toggle("open");
-		menu.classList.toggle("invisible");
-	};
-	menu_btn.addEventListener("click", toggleMenu);
-	menuItems.forEach((element) => {
-		element.addEventListener("click", toggleMenu);
-	});
-</script>

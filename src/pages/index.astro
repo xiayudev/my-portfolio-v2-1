@@ -7,7 +7,7 @@ import Contact from "../components/Contact.astro";
 import LittleProjects from "../components/LittleProjects.astro";
 ---
 
-<Layout title="My portfolio v2.1">
+<Layout title="My portfolio">
 	<!-- Header -->
 	<Header title="xiayudev™" signup="Sign Up" body="Home" />
 
@@ -63,7 +63,7 @@ import LittleProjects from "../components/LittleProjects.astro";
 			</div>
 		</section>
 
-		<!-- Section two -  Project 1-->
+		<!-- Section two -  Project 1 - MyMtech's website-->
 		<section
 			id="two"
 			class="h-auto w-full drop-shadow-xl md:flex md:h-screen md:items-end md:justify-center"
@@ -103,10 +103,10 @@ import LittleProjects from "../components/LittleProjects.astro";
 						>Learn More
 					</a> -->
 					<p class="text-gray-50 self-start">
-						See MyM Tech's website <a
+						See demo for <a
 							href="https://mymtech.netlify.app/"
 							target="_blank"
-							class="text-terciary hover:underline font-semibold">here</a
+							class="text-terciary hover:underline font-semibold">MyM Tech's website</a
 						>.
 					</p>
 				</div>
@@ -121,7 +121,7 @@ import LittleProjects from "../components/LittleProjects.astro";
 			</a>
 		</section>
 
-		<!-- Section three - Project 2-->
+		<!-- Section three - Project 2 - Simple Shell-->
 		<section
 			id="three"
 			class="h-auto w-full drop-shadow-2xl md:flex md:h-screen md:items-end md:justify-center"
@@ -148,9 +148,9 @@ import LittleProjects from "../components/LittleProjects.astro";
 					<div class="2xl:text-lg">
 						This shell is a basic implementation of the bash shell. It has no advanced features and should not be used as a shell by default.
 						<p>
-							To see how it works and how to use it, please check the repo <a href="https://github.com/Ghelder/holbertonschool-simple_shell"
+							To see how it works and how to use it, <a href="https://github.com/Ghelder/holbertonschool-simple_shell"
 							target="_blank"
-							class="text-terciary hover:underline font-semibold">here</a>
+							class="text-terciary hover:underline font-semibold">please check the repo.</a>
 						</p>
 					</div>
 					<!--<a
@@ -178,4 +178,22 @@ import LittleProjects from "../components/LittleProjects.astro";
 
 	<!-- Footer item -->
 	<Footer />
+	<script>
+		/**Menu bar icon */
+		const menu = document.getElementById("menu") as HTMLDivElement;
+		const menu_btn = document.getElementById("menu-btn") as HTMLDivElement;
+		const menuItems = document.querySelectorAll(".menu-item");
+	
+		const toggleMenu = () => {
+			const $body = document.querySelector("body") as HTMLBodyElement;
+			$body.classList.toggle("overflow-hidden");
+			menu_btn.classList.toggle("open");
+			menu.classList.toggle("invisible");
+		};
+		menu_btn.addEventListener("click", toggleMenu);
+		menuItems.forEach((element) => {
+			element.addEventListener("click", toggleMenu);
+		});
+	</script>
 </Layout>
+
