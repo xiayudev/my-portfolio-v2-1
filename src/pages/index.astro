@@ -1,9 +1,9 @@
 ---
 import Layout from "../layouts/layout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import Banner from "../components/Banner.astro";
-import Contact from "../components/Contact.astro";
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+import Banner from "../components/banner.astro";
+import Contact from "../components/contact.astro";
 import LittleProjects from "../components/LittleProjects.astro";
 ---
 
@@ -178,17 +178,17 @@ import LittleProjects from "../components/LittleProjects.astro";
 	<Footer />
 	<script>
 		/**Menu bar icon */
-		const menu = document.getElementById("menu") as HTMLDivElement;
-		const menu_btn = document.getElementById("menu-btn") as HTMLDivElement;
+		const menu = document.getElementById("menu");
+		const menu_btn = document.getElementById("menu-btn");
 		const menuItems = document.querySelectorAll(".menu-item");
 	
 		const toggleMenu = () => {
-			const $body = document.querySelector("body") as HTMLBodyElement;
-			$body.classList.toggle("overflow-hidden");
-			menu_btn.classList.toggle("open");
-			menu.classList.toggle("invisible");
+			const $body = document.querySelector("body");
+			$body?.classList.toggle("overflow-hidden");
+			menu_btn?.classList.toggle("open");
+			menu?.classList.toggle("invisible");
 		};
-		menu_btn.addEventListener("click", toggleMenu);
+		menu_btn?.addEventListener("click", toggleMenu);
 		menuItems.forEach((element) => {
 			element.addEventListener("click", toggleMenu);
 		});
