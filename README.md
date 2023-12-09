@@ -18,7 +18,7 @@
                                 
 ## Let's talk
 You can find me in these social medias:
-<div style="display: flex; justify-content: center">
+<div style="display: flex; justify-content: center" align="center">
     <a href="https://twitter.com/JeoJ7" target="_blank" style="margin-right: 10px">
         <img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
     </a>
